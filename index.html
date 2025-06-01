@@ -9,7 +9,7 @@
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=1980 height=1080 tabindex="-1"></canvas>
+      <canvas id="unity-canvas" width=1920 height=1080 tabindex="-1"></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
@@ -57,11 +57,11 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/Test.loader.js";
+      var loaderUrl = buildUrl + "/GLTest.loader.js";
       var config = {
-        dataUrl: buildUrl + "/Test.data",
-        frameworkUrl: buildUrl + "/Test.framework.js",
-        codeUrl: buildUrl + "/Test.wasm",
+        dataUrl: buildUrl + "/GLTest.data",
+        frameworkUrl: buildUrl + "/GLTest.framework.js",
+        codeUrl: buildUrl + "/GLTest.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "SejongCompany",
         productName: "Dungeon Shooter",
@@ -103,7 +103,7 @@
       } else {
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
 
-        canvas.style.width = "1980px";
+        canvas.style.width = "1920px";
         canvas.style.height = "1080px";
       }
 
